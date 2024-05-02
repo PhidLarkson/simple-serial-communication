@@ -16,16 +16,19 @@ void setup{
   pinMode(LED_PIN, OUTPUT);
 }
 
-void loop{
-    data = serial.read();
-
-    if (data = '1'){
+void loop() {
+    
+  if (Serial.available())
+  {
+    char data = Serial.read();
+    
+    if (data == 'A')
+    {
       digitalWrite(LED_PIN, HIGH);
     }
-    else if (data = '0'){
+    else if (data == 'B')
+    {
       digitalWrite(LED_PIN, LOW);
     }
-    else{
-      Serial.println("Invalid input");
-    }
+  }
 }

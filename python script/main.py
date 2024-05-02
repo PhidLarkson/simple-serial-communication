@@ -31,3 +31,9 @@ except KeyboardInterrupt | Exception:
     port.close()
     print('Port closed')
 
+# close the serial port
+port.close()
+
+# run the script
+if __name__ == '__main__':
+    pass
