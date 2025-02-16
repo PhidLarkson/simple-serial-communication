@@ -8,7 +8,7 @@
 // define the character read from the serial port
 char data;
 
-void setup{
+void setup(){
   // initialize the serial port
   Serial.begin(9600);
   
